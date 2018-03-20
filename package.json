@@ -1,0 +1,55 @@
+{
+  "name": "arisa-react-generator",
+  "version": "1.0.6",
+  "description": "A simple react component generator",
+  "engines": {
+    "node": "8.x"
+  },
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "preferGlobal": true,
+  "scripts": {
+    "start": "`npm bin`/babel-node ./src/index.js",
+    "build": "`npm bin`/babel --out-dir dist src",
+    "format": "`npm bin`/prettier --write './src/**/*.js' && `npm bin`/eslint ./src --fix"
+  },
+  "files": [
+    "dist",
+    "src",
+    "templates"
+  ],
+  "keywords": [
+    "react"
+  ],
+  "author": "ichiwa",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^7.0.0-beta.3",
+    "colors": "^1.1.2",
+    "fs-extra": "^5.0.0",
+    "hogan.js": "^3.0.2",
+    "inquirer": "^5.1.0",
+    "inquirer-command-prompt": "0.0.7",
+    "yargonaut": "^1.1.2",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.41",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/node": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.41",
+    "babel-eslint": "^8.0.0-alpha.17",
+    "babel-plugin-transform-object-rest-spread": "^7.0.0-beta.3",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.18.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ichiwa/arisa-react-generator.git"
+  }
+}
